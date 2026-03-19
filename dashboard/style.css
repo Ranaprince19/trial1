@@ -3,8 +3,8 @@
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --card-bg: rgba(255, 255, 255, 0.6);
-    --primary-color: #ff7e5f;
-    --secondary-color: #feb47b;
+    --primary-color: #ef4444;
+    --secondary-color: #b91c1c;
     --success: #10b981;
     --warning: #f59e0b;
     --danger: #ef4444;
@@ -72,7 +72,7 @@ body {
     left: -20%;
     width: 400px;
     height: 400px;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    background: linear-gradient(135deg, #fecaca 0%, #f87171 99%, #ef4444 100%);
 }
 
 .shape-2 {
@@ -80,7 +80,7 @@ body {
     right: -30%;
     width: 350px;
     height: 350px;
-    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background: linear-gradient(120deg, #fca5a5 0%, #dc2626 100%);
 }
 
 .content-scroll {

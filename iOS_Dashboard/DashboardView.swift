@@ -9,13 +9,13 @@ struct DashboardView: View {
             // Decorative shapes to give it the glassy, colorful modern app look
             GeometryReader { proxy in
                 Circle()
-                    .fill(LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.3), Color.orange.opacity(0.3)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .fill(LinearGradient(gradient: Gradient(colors: [Color.red.opacity(0.3), Color.pink.opacity(0.3)]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .frame(width: 300, height: 300)
                     .blur(radius: 60)
                     .position(x: 50, y: 50)
                 
                 Circle()
-                    .fill(LinearGradient(gradient: Gradient(colors: [Color.yellow.opacity(0.3), Color.orange.opacity(0.3)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .fill(LinearGradient(gradient: Gradient(colors: [Color.red.opacity(0.4), Color.orange.opacity(0.3)]), startPoint: .topLeading, endPoint: .bottomTrailing))
                     .frame(width: 250, height: 250)
                     .blur(radius: 50)
                     .position(x: proxy.size.width - 50, y: 200)
@@ -96,7 +96,7 @@ struct DashboardView: View {
                                     .fill(Color.gray.opacity(0.2))
                                     .frame(height: 8)
                                 RoundedRectangle(cornerRadius: 4)
-                                    .fill(LinearGradient(gradient: Gradient(colors: [Color.orange, Color.red]), startPoint: .leading, endPoint: .trailing))
+                                    .fill(LinearGradient(gradient: Gradient(colors: [Color.red.opacity(0.6), Color.red]), startPoint: .leading, endPoint: .trailing))
                                     .frame(width: geometry.size.width * 0.7, height: 8)
                             }
                         }
