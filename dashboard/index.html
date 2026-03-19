@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Worker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Background decorative elements -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+
+        <div class="content-scroll">
+            <!-- Header -->
+            <header class="header">
+                <div>
+                    <p class="greeting">👋 Hi Ravi,</p>
+                    <h1 class="welcome-text">Stay Safe Today</h1>
+                </div>
+                <div class="location-badge">
+                    <span>📍</span> Bangalore Zone 3
+                </div>
+            </header>
+
+            <!-- Protection Card -->
+            <section class="card protection-card glass-effect animate-up" style="--delay: 0.1s">
+                <div class="card-header">
+                    <div>
+                        <h2 class="card-title">Worker Protection</h2>
+                        <p class="card-subtitle">Standard ₹49/week</p>
+                    </div>
+                    <div class="status-badge active">
+                        <span class="dot"></span> Active
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="coverage-row">
+                        <span class="label">Coverage Left</span>
+                        <span class="value highlight">₹700</span>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Risk Meter -->
+            <section class="card risk-card glass-effect animate-up" style="--delay: 0.2s">
+                <div class="card-header">
+                    <h2 class="card-title">Today's Risk Level</h2>
+                </div>
+                <div class="risk-meter">
+                    <div class="level low">
+                        <div class="level-icon">🟢</div>
+                        <span>Low</span>
+                    </div>
+                    <div class="level medium active-risk">
+                        <div class="level-icon">🟡</div>
+                        <span>Medium</span>
+                    </div>
+                    <div class="level high">
+                        <div class="level-icon">🔴</div>
+                        <span>High</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Monitoring Section -->
+            <section class="monitoring-grid animate-up" style="--delay: 0.3s">
+                <div class="grid-item glass-effect alert-bg">
+                    <div class="icon-wrapper rain-icon">🌧️</div>
+                    <span class="title">Rain</span>
+                    <span class="val">Heavy</span>
+                </div>
+                <div class="grid-item glass-effect warning-bg">
+                    <div class="icon-wrapper aqi-icon">💨</div>
+                    <span class="title">AQI</span>
+                    <span class="val">280</span>
+                </div>
+                <div class="grid-item glass-effect danger-bg">
+                    <div class="icon-wrapper order-icon">🔻</div>
+                    <span class="title">Orders</span>
+                    <span class="val">Low</span>
+                </div>
+            </section>
+
+            <!-- Active Trigger Alert -->
+            <section class="trigger-alert glass-effect animate-up" style="--delay: 0.4s">
+                <div class="alert-icon pulse">⚠️</div>
+                <div class="alert-content">
+                    <h3>Heavy Rain Detected</h3>
+                    <p>You may experience income loss</p>
+                </div>
+                <button class="action-btn">View Details</button>
+            </section>
+
+            <!-- Earnings Section -->
+            <section class="card earnings-card glass-effect animate-up" style="--delay: 0.5s">
+                <div class="card-header">
+                    <h2 class="card-title">Earnings Overview</h2>
+                </div>
+                <div class="earnings-stats">
+                    <div class="stat-box expected">
+                        <span class="label">Expected</span>
+                        <span class="value">₹800</span>
+                    </div>
+                    <div class="stat-box actual">
+                        <span class="label">Actual</span>
+                        <span class="value">₹450</span>
+                    </div>
+                    <div class="stat-box loss">
+                        <span class="label">Loss</span>
+                        <span class="value">₹350</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Bottom spacing -->
+            <div style="height: 40px;"></div>
+        </div>
+    </div>
+</body>
+
+</html>
